@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Layout>
         <div style={{ color: `purple` }}>
-          <h1>Hello Gatsby!boooohlala I am writting</h1>
+          <h1>Hello Gatsby!boooohlala I am writting it isasdasdaf</h1>
           <p>What a world.</p>
           <img src={"https://source.unsplash.com/random/400x200"} alt="" />
         </div>
