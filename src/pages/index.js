@@ -1,22 +1,19 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import { Container } from "react-bootstrap"
+import AppNavbar from "../components/AppNavbar"
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import logo from "../images/gatsby-astronaut.png"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
-
-export default IndexPage
+export default function Home() {
+  return (
+    <>
+      <Layout>
+        <div style={{ color: `purple` }}>
+          <h1>Hello Gatsby!boooohlala I am writting</h1>
+          <p>What a world.</p>
+          <img src={"https://source.unsplash.com/random/400x200"} alt="" />
+        </div>
+      </Layout>
+    </>
+  )
+}
