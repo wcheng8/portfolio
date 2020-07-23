@@ -1,16 +1,16 @@
 import React from "react"
-import Header from "../components/header"
 import Layout from "../components/layout"
 import { Row, Col } from "reactstrap"
+import ImageCarousels from "../components/ImageCarousels"
 
-export default function About() {
+export default function About(props) {
   return (
     <Layout>
       <Row className="justify-content-center pt-5">
-        <Col className="col-4 justify-content-md-center">
-          <div>alt = My Face</div>
+        <Col className="col-4 justify-content-center align-items-center d-flex">
+          <ImageCarousels />
         </Col>
-        <Col className="col-4 pl-3">
+        <Col className="col-5 pl-4">
           <p>
             Hello there. I am a fullstack developer in training from Hong Kong.
             I used to work in Medical Device industry for a few years, before

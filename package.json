@@ -19,6 +19,7 @@
     "react-bootstrap": "^1.2.2",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
+    "react-scroll": "^1.8.0",
     "reactstrap": "^8.5.1"
   },
   "devDependencies": {

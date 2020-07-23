@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
-import { Row } from "reactstrap"
+import { Row, Button } from "reactstrap"
+import { Link } from "gatsby"
 
 export default function Home() {
   return (
@@ -15,6 +16,11 @@ export default function Home() {
         <Row className="justify-content-center ">
           <h1>I'm a full-stack developer.</h1>
         </Row>
+        <div className="d-flex justify-content-center pt-3">
+          <Link className="btn btn-dark" to="/portfolio">
+            Browse My Projects!
+          </Link>
+        </div>
       </Layout>
     </>
   )

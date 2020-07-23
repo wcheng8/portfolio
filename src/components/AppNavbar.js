@@ -6,17 +6,16 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
 } from "reactstrap"
 
 const AppNavbar = props => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => setIsOpen(!isOpen)
+
+  function pathIncludes(word) {
+    return window.location.href.includes(word) ? "active nav-link" : "nav-link"
+  }
 
   return (
     <div>
@@ -28,22 +27,22 @@ const AppNavbar = props => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink className="nav-link" href="/">
+              <NavLink className={pathIncludes("/home")} href="/home">
                 Home
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" href="/about">
+              <NavLink className={pathIncludes("about")} href="/about">
                 About
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" href="/portfolio">
+              <NavLink className={pathIncludes("portfolio")} href="/portfolio">
                 Portfolio
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" href="/contact">
+              <NavLink className={pathIncludes("contact")} href="/contact">
                 Contact
               </NavLink>
             </NavItem>
