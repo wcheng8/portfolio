@@ -14,7 +14,12 @@ const AppNavbar = props => {
   const toggle = () => setIsOpen(!isOpen)
 
   function pathIncludes(word) {
-    return window.location.href.includes(word) ? "active nav-link" : "nav-link"
+    return window.location.pathname.includes(word)
+      ? "active nav-link"
+      : "nav-link"
+  }
+  function pathIs(word) {
+    return window.location.pathname == word ? "active nav-link" : "nav-link"
   }
 
   return (
@@ -27,7 +32,7 @@ const AppNavbar = props => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink className={pathIncludes("/home")} href="/home">
+              <NavLink className={pathIs("/")} href="/">
                 Home
               </NavLink>
             </NavItem>
