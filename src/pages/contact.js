@@ -1,7 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import { Form, Button, Col, Row } from "react-bootstrap"
-import { Link } from "gatsby"
+import ContactNav from "../components/ContactNav"
+import resume from "../images/WilkinsC_FullStack_Resume.pdf"
 const contact = () => {
   return (
     <div>
@@ -46,8 +47,9 @@ const contact = () => {
             <div>
               <p>Wilkins Cheng</p>
               <p>wilkins.cheng@gmail.com</p>
-              <Link href="/">My Resume</Link>
+              <a href={resume}>Resume</a>
             </div>
+            <ContactNav />
           </Col>
         </Row>
       </Layout>
