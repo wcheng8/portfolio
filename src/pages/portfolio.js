@@ -18,6 +18,7 @@ const portfolio = () => {
           </div>
         </p>
 
+        {/* Strat of a project component */}
         <Row className="justify-content-around pt-5">
           <Link
             activeClass="active"
@@ -59,11 +60,20 @@ const portfolio = () => {
             alt="Generic placeholder"
           />
         </Row>
+        <hr />
         <Row className="d-flex justify-content-center" id="project1">
-          <CollapseElement />
+          <CollapseElement
+            title={"Project 1"}
+            content={"content"}
+            source={"source"}
+            site={"site"}
+          />
         </Row>
-        <Row className="d-flex justify-content-center">
-          <CollapseElement />
+        <Row className="d-flex justify-content-center" id="project2">
+          <CollapseElement title={"Project 2"} content={"content"} />
+        </Row>
+        <Row className="d-flex justify-content-center" id="project3">
+          <CollapseElement title={"Project 3"} content={"content"} />
         </Row>
       </Layout>
     </div>

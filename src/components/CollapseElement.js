@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Button, Collapse } from "react-bootstrap"
 
-function CollapseElement() {
+function CollapseElement({ content, title, source, site }) {
   const [open, setOpen] = useState(false)
 
   return (
@@ -11,14 +11,32 @@ function CollapseElement() {
         onClick={() => setOpen(!open)}
         aria-controls="example-collapse-text"
         aria-expanded={open}
+        className="btn btn-light"
       >
-        click
+        <div style={{ fontSize: "30px", fontWeight: "bold" }}>{title}</div>
       </Button>
       <Collapse in={open}>
-        <div id="example-collapse-text">
+        <div className="container pt-3 bg-light" id="example-collapse-text">
+          {content}
           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
           terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
           labore wes anderson cred nesciunt sapiente ea proident.
+          <div className="pt-2 justify-content-around d-flex">
+            <div>
+              {source && (
+                <a href="" className="text-secondary font-weight-bold">
+                  Source
+                </a>
+              )}
+            </div>
+            <div>
+              {site && (
+                <a href="" className="text-secondary font-weight-bold">
+                  Site
+                </a>
+              )}
+            </div>
+          </div>
         </div>
       </Collapse>
     </>
