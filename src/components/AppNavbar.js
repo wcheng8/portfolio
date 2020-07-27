@@ -39,7 +39,7 @@ const AppNavbar = props => {
                 activeClassName="active"
                 to="/portfolio"
               >
-                Portfolio
+                PortfolioCAHNGES
               </Link>
             </NavItem>
             <NavItem>
