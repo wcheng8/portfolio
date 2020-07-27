@@ -7,20 +7,12 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap"
+import { Link } from "gatsby"
 
 const AppNavbar = props => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => setIsOpen(!isOpen)
-
-  function pathIncludes(word) {
-    return window.location.pathname.includes(word)
-      ? "active nav-link"
-      : "nav-link"
-  }
-  function pathIs(word) {
-    return window.location.pathname == word ? "active nav-link" : "nav-link"
-  }
 
   return (
     <div>
@@ -32,24 +24,28 @@ const AppNavbar = props => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink className={pathIs("/")} href="/">
+              <Link className="nav-link" activeClassName="active" to="/">
                 Home
-              </NavLink>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink className={pathIncludes("about")} href="/about">
+              <Link className="nav-link" activeClassName="active" to="/about">
                 About
-              </NavLink>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink className={pathIncludes("portfolio")} href="/portfolio">
+              <Link
+                className="nav-link"
+                activeClassName="active"
+                to="/portfolio"
+              >
                 Portfolio
-              </NavLink>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink className={pathIncludes("contact")} href="/contact">
+              <Link className="nav-link" activeClassName="active" to="/contact">
                 Contact
-              </NavLink>
+              </Link>
             </NavItem>
           </Nav>
         </Collapse>
