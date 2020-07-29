@@ -18,20 +18,17 @@ function CollapseElement({ content, title, source, site }) {
       <Collapse in={open}>
         <div className="container pt-3 bg-light" id="example-collapse-text">
           {content}
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-          terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-          labore wes anderson cred nesciunt sapiente ea proident.
           <div className="pt-2 justify-content-around d-flex">
             <div>
               {source && (
-                <a href="" className="text-secondary font-weight-bold">
+                <a href={source} className="text-secondary font-weight-bold">
                   Source
                 </a>
               )}
             </div>
             <div>
               {site && (
-                <a href="" className="text-secondary font-weight-bold">
+                <a href={site} className="text-secondary font-weight-bold">
                   Site
                 </a>
               )}
