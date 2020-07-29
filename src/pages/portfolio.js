@@ -112,7 +112,8 @@ const portfolio = () => {
               "A web application created on Rails which serves as a two-way marketplace for used books. Users can also browse book recommendations through a basic search bar in the PostgreSQL database and have basic CRUD (Create, Read, Update and Delete) operations on book listings, recommendations and books. The application implements AWS to save book images and integrates Stripe to allow for payment processing. A chatroom feature is also integrated using websockets to allow for communication with different users."
             }
             source={"https://github.com/wcheng8/bookmarketapp"}
-            site={"site"}
+            site={"https://booksmarket.herokuapp.com/
+            "}
           />
         </Row>
         <Row className="d-flex justify-content-center" id="project3">
