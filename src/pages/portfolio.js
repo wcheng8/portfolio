@@ -112,8 +112,7 @@ const portfolio = () => {
               "A web application created on Rails which serves as a two-way marketplace for used books. Users can also browse book recommendations through a basic search bar in the PostgreSQL database and have basic CRUD (Create, Read, Update and Delete) operations on book listings, recommendations and books. The application implements AWS to save book images and integrates Stripe to allow for payment processing. A chatroom feature is also integrated using websockets to allow for communication with different users."
             }
             source={"https://github.com/wcheng8/bookmarketapp"}
-            site={"https://booksmarket.herokuapp.com/
-            "}
+            site={"https://booksmarket.herokuapp.com/"}
           />
         </Row>
         <Row className="d-flex justify-content-center" id="project3">
@@ -130,10 +129,10 @@ const portfolio = () => {
           <CollapseElement
             title={"MarkDown Converter (MERN)"}
             content={
-              "A web application that uses the MERN (MongoDB, Express, React, Node) stack to create a simple blog application that allows users to write and save notes in MarkDown and different formats. Users can add tags to their blog posts and view other people's blog post. It also allows for users export the markdown files in .pdf format, which is saved on to AWS, and can be downloaded by the user."
+              "A web application that uses the MERN (MongoDB, Express, React, Node) stack to create a simple blog application that allows users to write and save notes in MarkDown and different formats. Users can add tags to their blog posts and view other people's blog post. It also allows for users export the markdown files in .pdf format, which is saved on to AWS, and can be downloaded by the user. "
             }
             source={"https://github.com/Harrisonp365/Blog-application"}
-            site={"site"}
+            site={"http://188.166.224.122/"}
           />
         </Row>
       </Layout>
